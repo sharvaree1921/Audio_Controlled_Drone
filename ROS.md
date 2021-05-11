@@ -45,6 +45,7 @@ Follow the tutorial there itself.
 
 For creating packages and all, first we have to make the appropriate workspace as: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 
+For rest of the tutorials follow: http://wiki.ros.org/ROS/Tutorials
 
 
 
