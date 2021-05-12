@@ -19,3 +19,5 @@ often sharing a similar user interface and the ability to easily exchange data w
 **MAVLink** -- Micro Air Vehicle Message Marshalling Library.
 MAVLink is a very lightweight, header-only message library for communication between drones and/or ground control stations. It consists primarily of message-set specifications for different systems ("dialects") defined in XML files, and Python tools that convert these into appropriate source code for supported languages. There are additional Python scripts providing examples and utilities for working with MAVLink data.
 
+_Mavros_ (opens new window) is a ROS (1) package that enables MAVLink extendable communication between computers running ROS (1) for any MAVLink enabled autopilot, ground station, or peripheral. MAVROS is the "official" supported bridge between ROS (1) and the MAVLink protocol.
+
