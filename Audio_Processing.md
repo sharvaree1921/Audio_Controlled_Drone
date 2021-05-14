@@ -83,3 +83,10 @@ MFCCs Applications:
 - Music Instrument Classification
 
 Summarizing Deep Learning pre-processing pipeline for audio data
+
+![]()
+
+### Pre-processing of Audio Data
+
+[Preprocessing audio data for deep learning](https://www.youtube.com/watch?v=Oa_d-zaUti8)
+
