@@ -25,6 +25,8 @@ Bit depth: 16bits/channel
 
 A real world sound wave(piano key):
 
+![]()
+
 **Fourier Transform:**
 Decompose complex periodic sound into sum of sine waves oscillating at different frequencies. As far as F.T. is concerned,
 amplitude matters a lot because it tells about how much specific frequency contributes to the complex sound.
