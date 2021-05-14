@@ -51,7 +51,13 @@ Let's see how we manipulate STFT:
 
 Sliding the frame size to the next time interval and carry out the same procedure. 
 
-Spectrograms are important to understand the audio processing in Neural Networks. Basically whole pre-processing technique is based upon the concept of spectrogram.
+**Spectrograms** are important to understand the audio processing in Neural Networks. Basically whole pre-processing technique is based upon the concept of spectrogram.
+
+A spectrogram is a visual way of representing the signal strength, or “loudness”, of a signal over time at various frequencies present in a particular waveform. Not only can one see whether there is more or less energy at, for example, 2 Hz vs 10 Hz, but one can also see how energy levels vary over time.
+
+The spectral features (frequency-based features), which are obtained by converting the time-based signal into the frequency domain using the Fourier Transform, like fundamental frequency, frequency components, spectral centroid, spectral flux, spectral density, spectral roll-off, etc.
+
+_Spectral Centroid_: The spectral centroid indicates at which frequency the energy of a spectrum is centered upon or in other words It indicates where the ” center of mass” for a sound is located. This is like a weighted mean.
 
 Given the audio dataset, we pass it through the STFT and get the corresponding spectrograms for all training samples. We pass this spectrogram as an input to our deep learning neural network.
 
