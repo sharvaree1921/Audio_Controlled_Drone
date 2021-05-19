@@ -72,12 +72,23 @@ There could be various types of input and output data types. T_x and T_y can be 
 ![rnn-2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-48-02.png)
 
 ### Language Model and Sequence Generation
+EOS means End of Sentence. 
+
 Given any sentence, the language model tells about the probability of that particular sentence of the complete sentence. The probabilities are calculated for each word sequentially. The output of previous step is fed as an input to the next time step.
 
 ![LM](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-59-06.png)
 ![LM-2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-07-56.png)
 ![LM-3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-14-34.png)
 
+### Sampling Novel Sequences
+![samp](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-58-39.png)
+**Character Level Language Model**
+Assign various characters, punctuation_marks to a vocabulory. When character level model is used, different characters are assigned different <y^> values. Now our training data would be individual characters rather than words. We don't have to worry about the unknown word tokens. The words like 'mau' are assigned non-zero pobabilities now. Whereas if mau was not in your vocabulary for the word level language model,you just have to assign it the unknown word token. One disadvantage is that, you get a much longer sequence. Hence, computationally heavy.
+
+![samp2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2023-09-38.png)
+![samp3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2023-12-06.png)
+
+### Vanishing Gradients with RNNs
 
 
 
