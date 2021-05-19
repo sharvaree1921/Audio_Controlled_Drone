@@ -71,6 +71,12 @@ There could be various types of input and output data types. T_x and T_y can be 
 ![rnn-1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-46-46.png)
 ![rnn-2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-48-02.png)
 
+### Language Model and Sequence Generation
+Given any sentence, the language model tells about the probability of that particular sentence of the complete sentence. The probabilities are calculated for each word sequentially. The output of previous step is fed as an input to the next time step.
+
+![LM](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-59-06.png)
+![LM-2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-07-56.png)
+![LM-3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot from 2021-05-19 22-14-34.png)
 
 
 
