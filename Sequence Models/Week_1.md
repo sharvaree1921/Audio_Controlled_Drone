@@ -23,7 +23,7 @@ For entity recognition, it is "Harry Potter", "Hermoine Granger". Hence the outp
 
 T_x = 9, T_y = 9 which is length of input and output data. Coincidently, it is equal in this case.
 
-Also, each training example is denoted by x^{<i>}. Hence, the t-th feature of the i-th training input is given by x^{<i><t>}. Similarly y^{<i><t>}.
+Also, each training example is denoted by x^{i}. Hence, the t-th feature of the i-th training input is given by x^{i}{t}. Similarly y^{i}{t}.
 Similarly, T_x^{i} and T_y^{i} are input and output lengths of the i-th training sample.
   
 ![]{}  
@@ -34,6 +34,8 @@ Vocabulory. Given a dictionary size of say 10,000.(Usually it's 30,000/50,000)
 Use one hot encoding for the dictionary array for representating each word in the given sentence. 
   
 ![]()
+
+
   
 
   
