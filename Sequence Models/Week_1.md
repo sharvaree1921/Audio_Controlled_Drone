@@ -56,3 +56,9 @@ Forward Propagation: We calculate the output Y as well as the activation of that
 Simplified RNN notation can be seen as follows:
 
 ![RNN-4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2015-54-06.png)
+
+### Backpropagation in RNN
+
+The activations depend upon parameters W_a, b_a. To compute Y_hat, we need parameters W_y, b_y. We introduce the element wise loss(i.e. for single word), called as standard logistic regrssion or the cross entropy loss. Adding the corresponding losses we get the total loss.
+
+![Back](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2017-18-48.png)
