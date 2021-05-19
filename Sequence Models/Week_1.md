@@ -76,7 +76,7 @@ Given any sentence, the language model tells about the probability of that parti
 
 ![LM](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2021-59-06.png)
 ![LM-2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-07-56.png)
-![LM-3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot from 2021-05-19 22-14-34.png)
+![LM-3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2022-14-34.png)
 
 
 
