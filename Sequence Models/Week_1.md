@@ -89,8 +89,14 @@ Assign various characters, punctuation_marks to a vocabulory. When character lev
 ![samp3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2023-12-06.png)
 
 ### Vanishing Gradients with RNNs
+Language can have a long term dependencies. See the two examples in the image. Vanishing Gradients can occur while forward prop. or backprop. The neural Network may find it difficult to memorize the features(say a singular noun or the plural noun). Thus the output is greatly influenced by the near by previous layers. 
+The gradients can also increase exponentially. However, the exploding gradients problem can be spotted more quickly. Gradient clipping is one of the way to avoid this exploding gradient problem. But, vanishing gradient is more important problem to tackle. 
 
+![VG](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-19%2023-22-25.png)
 
+In order to capture much larger range dependencies and overcome the problem of Vanishig gradient, _Gated Recurrent Units_ are introduced.
+
+### Gated Recurrent Unit(GRU)
 
 
 
