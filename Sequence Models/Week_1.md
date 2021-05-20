@@ -98,10 +98,52 @@ In order to capture much larger range dependencies and overcome the problem of V
 
 ### Gated Recurrent Unit(GRU)
 
+Complete video [here](https://www.coursera.org/learn/nlp-sequence-models/lecture/agZiL/gated-recurrent-unit-gru)
 
+We introduce a new variable called as c^<t> which acts as memory cell(say it memorizes whether the subject of the sentence is singular or plural). This memory cell is equated to the activation function. At every time step we are going to overwrite this memory cell with a value of c_tilda^<t>. So, c_tilda^<t> is going to be candidate for replacing c^<t>. 
+  
+Now, we introduce the concept of gate called as Gamma_u which is important concept of GRU. It's called the update gate and its value lies between 0 and 1. Since, sigmoid function is used while its computation, for most of the values, its vale is 0 or 1. The key part of the GRU is this equation which is that we have come up with a candidate where we're thinking of updating c using c tilde, and then the gate will decide whether or not we actually update it. And so the way to think about it is maybe this memory cell c is going to be set to either zero or one depending on whether the word you are considering, really the subject of the sentence is singular or plural.
+So because it's singular, let's say that we set this to one. And if it was plural, maybe we would set this to zero, and then the GRU unit would memorize the value of the c<t> all the way until here, where this is still equal to one and so that tells it, oh, it's singular so use the choice was.
+And the job of the gate, of gamma u, is to decide when do you update these values. 
 
+![gru1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2013-21-23.png)  
+  
+if the update value,
+this equal to one, then it's saying
+set the new value of c<t> equal to this candidate value.
+So that's like over here,
+set gate equal to one so go ahead and update that bit.
+And then for all of these values in the middle,
+you should have the gate equals zero.
+So this is saying don't update it,
+don't update it, don't update it,
+just hang onto the old value.
+Because if gamma u is equal to zero,
+then this would be zero,
+and this would be one.
+And so it's just setting c<t> equal to the old value,
+even as you scan the sentence from left to right.
+So when the gate is equal to zero,
+we're saying don't update it,
+don't update it, just hang on to the value and don't forget what this value was.
+And so that way even when you get all the way down here,
+hopefully you've just been setting c<t> equals c<t> minus one all along.
+And it still memorizes,
+the cat was singular. 
 
+![gru2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2013-32-20.png)  
 
+In full GRU, the 'r' stands for how relevant that previous activation or memory cell is.
+  
+![gru3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2013-41-45.png)
+
+**Correction**  
+![gru4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-15-54.png)  
+
+### Long Short Term Memory(LSTM)
+  
+  
+  
 
 
 
