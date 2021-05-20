@@ -143,7 +143,21 @@ In full GRU, the 'r' stands for how relevant that previous activation or memory 
 ![gru4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-15-54.png)  
 
 ### Long Short Term Memory(LSTM)
+
+LSTM is much more powerful than GRU. GRU had gamma_u and (1-gamma_u) as the update and forget gates respectively. However, LSTM itself introduces its own separate forget gate called as gamma_f. Also, gamma_o i.e the output gate is also introduced for obtaining the output. Now we have 3 gates instead of 2 gates in GRU. The equations governing the LSTM are as follows:
+
+![lstm1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-30-23.png)
+![lstm2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-35-49.png)
+**Correction:**
+![lstm3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/vEHtd8hlEemS6xJ43HxpzA_8c54dc2a23799817e45bd4fb6fe96389_Screen-Shot-2019-08-26-at-5.56.30-PM.png)
+There exist various variations to the existing LSTM. The gate values may also depend upon x_t, a_(t-1), or other previous layer activations instead of just the previous layer values. This type of LSTM is called _Peephole Connection_
   
+When to use GRU or LSTM?
+GRU were introduced much later in the research. The advantage of GRU is that it is simplified version and can be used in huge networks. It's computationally also good. However, LSTM networks are much more powerful and are used historically. 
+ 
+![gru and lstm](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/1*yBXV9o5q7L_CvY7quJt3WQ.png)
+  
+
   
   
 
