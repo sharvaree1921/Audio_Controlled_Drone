@@ -133,6 +133,8 @@ the cat was singular.
 
 ![gru2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2013-32-20.png)  
 
+**Note that when gamma_u is zero or close to zero, the c^<t> equation still contains the term c^<t-1>. This implies that, it still memorizes the previous value and thus overcame the problem of vanishing gradient. 
+  
 In full GRU, the 'r' stands for how relevant that previous activation or memory cell is.
   
 ![gru3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2013-41-45.png)
