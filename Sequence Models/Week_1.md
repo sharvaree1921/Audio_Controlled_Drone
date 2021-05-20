@@ -157,8 +157,38 @@ GRU were introduced much later in the research. The advantage of GRU is that it 
  
 ![gru and lstm](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/1*yBXV9o5q7L_CvY7quJt3WQ.png)
   
-
+### Bidirectional RNN
   
+By now, we have seen only the basic structures of RNNs. However, there are two ideas which build more powerful RNNs namely: Bidirectional RNN(which allows one to access the information fromprevious or later instants) and Deep RNNs
+  
+In BRNN, we will introduce the backward connections in between the existing layers.
+
+![brnn1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-50-55.png)
+![brnn2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-20%2014-55-18.png)  
+  
+This is
+a modification they can make to the basic RNN architecture or the GRU or the LSTM,
+and by making this change you can have a model that
+uses RNN and or GRU or LSTM and is able to make
+predictions anywhere even in the middle of a sequence by taking into
+account information potentially from the entire sequence.
+The disadvantage of the bidirectional RNN is that you do
+need the entire sequence of data before you can make predictions anywhere.
+So, for example, if you're building a speech recognition system,
+then the BRNN will let you take into account
+the entire speech utterance but if you use this straightforward implementation,
+you need to wait for the person to stop talking to get
+the entire utterance before you can
+actually process it and make a speech recognition prediction.
+So for a real type speech recognition applications,
+they're somewhat more complex modules as well rather than just
+using the standard bidirectional RNN as you've seen here.
+But for a lot of natural language processing applications where
+you can get the entire sentence all the same time,
+the standard BRNN algorithm is actually very effective. 
+  
+### Deep RNN
+
   
 
 
