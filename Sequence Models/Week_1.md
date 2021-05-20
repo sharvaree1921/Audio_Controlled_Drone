@@ -188,7 +188,7 @@ you can get the entire sentence all the same time,
 the standard BRNN algorithm is actually very effective. 
   
 ### Deep RNN
-
+Complete Video can be found [here](https://www.coursera.org/learn/nlp-sequence-models/lecture/ehs0S/deep-rnns)
   
 
 
