@@ -147,7 +147,49 @@ symmetric roles unlike the earlier models we saw in the previous videos.
 
 ![g3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-12-10.png)
 
+Correction:
+![g4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-18-39.png)
 
+### Sentiment Classification
+One of the challenges of sentiment classification
+is you might not have a huge label training set for it.
+But with word embeddings,
+you're able to build good sentiment classifiers
+even with only modest-size label training sets.
+
+![sc1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-26-59.png)
+
+the job of the RNN is to then compute
+the representation at the last time step that allows you to predict Y-hat.
+So this is an example of
+a many-to-one RNN architecture which we saw in the previous week.
+And with an algorithm like this,
+it will be much better at taking word sequence into account and realize that "things are
+lacking in good taste" is a negative review
+and "not good" a negative review unlike the previous algorithm,
+which just sums everything together into a big-word vector
+mush and doesn't realize that "not good" has a very different meaning
+than the words "good" or "lacking in good taste" and so on.
+And so if you train this algorithm,
+you end up with a pretty decent sentiment classification algorithm and
+because your word embeddings can be trained from a much larger data set,
+this will do a better job
+generalizing to maybe even new words now that you'll see in your training set,
+such as if someone else says,
+"Completely absent of good taste,
+good service, and good ambiance" or something,
+then even if the word "absent" is not in your label training set,
+if it was in your 1 billion or 100 billion word corpus used to train the word embeddings,
+it might still get this right and generalize much better even to words that were in
+the training set used to train the word embeddings but not
+necessarily in the label training set
+that you had for specifically the sentiment classification problem. 
+
+![sc2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-30-07.png)
+
+### Debiasing Word Embedding
+
+For increasing accuracy, we have to make sure that our model is not biased to any of the feature. We shall see now how to eliminate those bias. (The bias is not the bias of NN here)
 
 
 
