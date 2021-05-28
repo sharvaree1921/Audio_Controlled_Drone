@@ -191,9 +191,11 @@ that you had for specifically the sentiment classification problem.
 
 For increasing accuracy, we have to make sure that our model is not biased to any of the feature. We shall see now how to eliminate those bias. (The bias is not the bias of NN here)
 
+![db1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-37-19.png)
 
+Much more research is being carried out in the this field for reducing word debiasing
 
-
+![db2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-43-56.png)
 
 
 
