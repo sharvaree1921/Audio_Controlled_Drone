@@ -114,5 +114,50 @@ Also, the disadvantage with softmax is that it's computationally heavy. Heirarch
 
 ### Negative Sampling
 
+![ns1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2016-42-49.png)
+
+This is just a modified way of learning algorithm and much more efficient than the skip gram model.'
+For every positive examples, we have k negative examples for logistic regression type model. 
+
+![ns2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2016-33-01.png)
+
+![ns3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2016-42-38.png)
+
+### GloVe Word Vectors
+
+Not as popular as previous words. Symmetric relation between them if they appear in +-10 words of each other. X_ij is count of how close they appear w.r.t each other. Basically, the GloVe model minimizes the difference between :
+
+![g1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2016-48-55.png)
+
+We introduce the weighting term f_ij because we don't want log(X_ij) to be not equal to log(0). The other thing that this term f_ij does is:
+rare words such as 'durin' are given more weight even though they do not appear as frequently as other similar words occur. Also, it does'nt give undue weight to the _Stop Words_ such as this, that, the, is, etc. which eventually hardly matter. 
+
+In this GloVe model, theta and e are symmetrical.They eventually end up in the same optimization objective. One way to train the algorithm is to initialize theta and e
+both uniformly around gradient descent to minimize its objective,
+and then when you're done for every word,
+to then take the average.
+For a given words w,
+you can have e final to be equal
+to the embedding that was trained through this gradient descent procedure,
+plus theta trained through this gradient descent procedure divided by two,
+because theta and e in this particular formulation play
+symmetric roles unlike the earlier models we saw in the previous videos.
+
+![g2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-05-08.png)
+
+![g3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2017-12-10.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
