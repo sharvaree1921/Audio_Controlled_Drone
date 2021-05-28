@@ -84,7 +84,12 @@ Cosine similarity basically checks the inner product of the two vectors in t-swe
 
 ![we7](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2014-10-04.png)
 
+### Embedding Matrix
 
+Now we shall see how to learn the word embeddings.
+The big 300x10000 is the embedded matrix.
+
+![l1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2014-20-45.png)
 
 
 
