@@ -92,9 +92,27 @@ The big 300x10000 is the embedded matrix.
 ![l1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2014-20-45.png)
 
 
+### Learning Word Embeddings
 
+It turns out that Neural Network model is the small way of learning word embeddings. The hidden layers have their own parameters and the softmax at the end predicts the word 'juice'. 
 
+![l2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2015-38-52.png)
 
+![l3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2015-42-06.png)
+
+### Word2Vec
+
+If we want to predict the word within the window of +-10 words, then we define a context and a specified target. This is not an easy learning problem as there are many other words in a window of +-10 words. Embedding vector is obtained. 
+
+![w1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2015-56-09.png)
+
+This particular model is skip gram model because it skips some words according to the given context and the desired target.
+
+Also, the disadvantage with softmax is that it's computationally heavy. Heirarchical Classification is good way to avoid this. Having a tree like this, the nodes can act just like a binary classification. Heirarchical softmax classifier doesn't nearly seem to be symmetrical. Usually the common words such as 'orange' or 'apple' are placed at the top 2/3 layers. However, the rare words such as 'durin' are placed at the much deeper nodes. This is one of the ways for speeding up the process.
+
+![w2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2016-10-04.png)
+
+### Negative Sampling
 
 
 
