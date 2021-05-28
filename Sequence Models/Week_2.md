@@ -69,6 +69,21 @@ free off the Internet to figure out that orange, apple, and durian are fruits.
 ![we4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-38-02.png)
 
 
+### Properties of Word Embeddings
+
+One of the most fascinating properties of word embeddings is that they can also
+help with analogy reasoning
+
+![we5](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-59-42.png)
+
+- 300D to 2D mapping for greater visualization
+
+![we6](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2014-04-42.png)
+
+Cosine similarity basically checks the inner product of the two vectors in t-swe space. More the inner product greater is the similarity.
+
+![we7](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2014-10-04.png)
+
 
 
 
