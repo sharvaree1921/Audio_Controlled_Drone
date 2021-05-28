@@ -25,3 +25,56 @@ The representation that uses some sort of feauturized represntations in maybe a 
 
 ![wr3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2012-56-01.png)
 
+
+### Using Word Embeddings
+
+In this video, you see how we can take these representations and plug them into NLP applications. Continuing with the named entity recognition example,
+if you're trying to detect people's names. Given a sentence like Sally Johnson is an orange farmer, hopefully, you'll figure out that Sally Johnson is a person's name, hence, the outputs 1 like that. if you can now use the featurized representations, the embedding vectors that we talked about in the last discussion.
+Then after having trained a model that uses word embeddings as the inputs, if you now see a new input, Robert Lin is an apple farmer.
+Knowing that orange and apple are very similar will make it easier for your learning algorithm to generalize to figure out that Robert Lin is also a human.
+
+!we1[](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-22-50.png)
+
+A durian is a rare type of fruit, popular in Singapore and a few other countries.
+But if you have a small label training set for the named entity recognition task,
+you might not even have seen the word durian or
+seen the word cultivator in your training set.
+I guess technically, this should be a durian cultivator.
+But if you have learned a word embedding that tells you that durian is a fruit,
+so it's like an orange, and a cultivator, someone that cultivates is like a farmer,
+then you might still be generalize from having seen an orange farmer in your
+training set to knowing that a durian cultivator is also probably a person.
+So one of the reasons that word embeddings will be able to do this is
+the algorithms to learning word embeddings can examine very large text corpuses,
+maybe found off the Internet.
+So you can examine very large data sets, maybe a billion words,
+maybe even up to 100 billion words would be quite reasonable.
+So very large training sets of just unlabeled text. 
+
+Now having discovered that orange and
+durian are both fruits by reading massive amounts of Internet text,
+what you can do is then take this word embedding and apply it to your named
+entity recognition task, for which you might have a much smaller training set,
+maybe just 100,000 words in your training set, or even much smaller. 
+
+This allows us to use **Transfer Learning**  
+where you take information you've learned from
+huge amounts of unlabeled text that you can suck down essentially for
+free off the Internet to figure out that orange, apple, and durian are fruits. 
+
+![we2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-24-58.png)
+
+![we3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-36-55.png)
+
+![we4](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-28%2013-38-02.png)
+
+
+
+
+
+
+
+
+
+
+
