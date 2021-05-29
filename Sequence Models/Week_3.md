@@ -40,4 +40,29 @@ Why not _Greedy Search_? In this algorithm, given the first word, we choose the 
 
 The no. of words in English Vocabolury is so so large, that predicting the next word given some prior words is really difficult. For a 10 word long sentence and 10,000 words dictionary, we have 10000^10 choices which is exponentially very very large. Hence, we use something sort of 'Approximate Algorithm' which finds the sentence with maximum conditional probability.
 
+### Beam Search
+
+In this Beam Search Algorithm, first we have the input French words. We also have a beam serach algorithm paramter called as **Beam Width**: *b*. When b=3(say), it will find 3 most likely words from the given vocabulory of say 10000 words. If b=10, it will find 10 such words. The beam width indicates the most likely(rather most probable) choices for the first word. 
+So, to be clear in order to perform this first step of Beam search,
+what you need to do is run the input French sentence through
+this encoder network and then this first step will then decode the network,
+this is a softmax output overall 10,000 possibilities.
+Then you would take those 10,000 possible
+outputs and keep in memory which were the top three. 
+
+![bs1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2007-07-35.png)
+
+For figuring out that, what the second word is: 
+
+![bs2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2007-17-01.png)
+
+For figuring out that, what the third word is: 
+
+![bs3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2007-20-59.png)
+
+
+
+
+
+
 
