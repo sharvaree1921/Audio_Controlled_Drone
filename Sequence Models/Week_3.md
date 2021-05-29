@@ -145,5 +145,5 @@ repeated characters not separated by "blank
 ![sr2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-53-55.png)
 
 
-
+**[Trigger Word Detection](https://www.coursera.org/learn/nlp-sequence-models/lecture/Li4ts/trigger-word-detection)**
 
