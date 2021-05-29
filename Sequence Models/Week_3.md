@@ -60,9 +60,22 @@ For figuring out that, what the third word is:
 
 ![bs3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2007-20-59.png)
 
+### Refinements to Beam Search
 
+**Length Normalization** can help us get much more better results in the Beam Search Algorithm.
+The Beam Search algorithm is nothing but as shown in the image below. The product of probabilities may result in Numerical Underflow as all the probabilities are less than 1. Taking log will result i its addition and hece give more stable result. 
 
+Another issue with this objective function is that when the length of the sentence is big, the product of probabilities is much lower and hence the probability of the sentence is low.and may give undesirable results. 
 
+Hence, the objective function tends to prefer the shorter length sentences. Normalizing/Averaging significantly reduces the penalty for outputing the longer translations. 
+
+![r1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2007-56-04.png)
+
+Larger the B is, larger the possibilities, more heavy is the computation.
+
+![r2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2008-00-38.png)
+
+### Error Analysis in Beam Search
 
 
 
