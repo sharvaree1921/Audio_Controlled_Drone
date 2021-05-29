@@ -92,3 +92,32 @@ try a different network architecture, or something else
 
 ### Bleu Score
 
+[See Coursera Video](https://www.coursera.org/learn/nlp-sequence-models/lecture/kC2HD/bleu-score-optional)
+
+### Attention Model Intuition
+
+Until now, we were using two different models for input and output of the words. The Attention model architecture simplifies this all.
+![](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-01-02.png)
+
+We are using simple bidirectional RNN.
+
+What the Attention Model would be computing is a set of
+attention weights and we're going to use Alpha one, one
+to denote when you're generating the first words,
+how much should you be paying attention to this first piece of information here.
+And then we'll also come up with a second that's called Attention Weight,
+Alpha one, two which tells us what we're trying to compute the first work of Jane,
+how much attention we're
+paying to this second work from the inputs and so on and the Alpha one, three and so on,
+and together this will tell us what is
+exactly the context from denoter C that we should be paying attention to,
+and that is input to this R and N unit to then try to generate the first words
+
+### Attention Model
+
+
+
+
+
+
+
