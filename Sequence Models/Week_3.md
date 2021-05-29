@@ -126,6 +126,24 @@ t' for french words.
 ![am3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-39-01.png)
 
 
+### Speech Recognition
+
+![sr1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-49-30.png)
+
+For example, if you have 10 seconds of audio and your features
+come at a 100 hertz so 100 samples per second,
+then a 10 second audio clip would end up with a thousand inputs.
+Right, so it's 100 hertz times 10 seconds,
+and so with a thousand inputs.
+But your output might not have a thousand alphabets,
+might not have a thousand characters.
+So, what do you do?
+The CTC cost function comes to the rescue.
+And the basic rule for the CTC cost function is to collapse
+repeated characters not separated by "blank
+
+![sr2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-53-55.png)
+
 
 
 
