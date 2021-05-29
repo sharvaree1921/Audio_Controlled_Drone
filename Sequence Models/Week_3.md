@@ -97,7 +97,7 @@ try a different network architecture, or something else
 ### Attention Model Intuition
 
 Until now, we were using two different models for input and output of the words. The Attention model architecture simplifies this all.
-![](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-01-02.png)
+![see the video](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-01-02.png)
 
 We are using simple bidirectional RNN.
 
@@ -115,7 +115,15 @@ and that is input to this R and N unit to then try to generate the first words
 
 ### Attention Model
 
+t' for french words.
 
+[see thr video](https://www.coursera.org/learn/nlp-sequence-models/lecture/lSwVa/attention-model)
+
+![am1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-25-22.png)
+
+![am2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-37-33.png)
+
+![am3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2009-39-01.png)
 
 
 
