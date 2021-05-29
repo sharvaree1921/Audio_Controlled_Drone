@@ -77,5 +77,18 @@ Larger the B is, larger the possibilities, more heavy is the computation.
 
 ### Error Analysis in Beam Search
 
+![e1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2008-14-21.png)
 
+![e2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2008-17-24.png)
+
+![e3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-05-29%2008-19-52.png)
+
+If you find that beam search is responsible for a lot of errors,
+then maybe is we're working hard to increase the beam width.
+Whereas in contrast, if you find that the RNN model is at fault,
+then you could do a deeper layer of analysis to try to figure out if you want
+to add regularization, or get more training data, or
+try a different network architecture, or something else
+
+### Bleu Score
 
