@@ -21,3 +21,4 @@ MAVLink is a very lightweight, header-only message library for communication bet
 
 _Mavros_ (opens new window) is a ROS (1) package that enables MAVLink extendable communication between computers running ROS (1) for any MAVLink enabled autopilot, ground station, or peripheral. MAVROS is the "official" supported bridge between ROS (1) and the MAVLink protocol.
 
+The **SITL** (software in the loop) simulator allows you to run Plane, Copter or Rover without any hardware. It is a build of the autopilot code using an ordinary C++ compiler, giving you a native executable that allows you to test the behaviour of the code without hardware.
