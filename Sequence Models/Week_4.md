@@ -37,3 +37,8 @@ For multi head, we ask multiple questions, each responsible for answering the mo
 
 ### Transformers Network
 
+![n1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-06-28%2008-15-37.png)
+
+![n2](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-06-28%2008-15-21.png)
+
+![n3](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-06-28%2008-15-06.png)
