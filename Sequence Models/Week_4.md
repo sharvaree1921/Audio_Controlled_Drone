@@ -27,5 +27,13 @@ q: Query, k: Key, V: Value
 
 W^q, W^k, W^v are the parameters of learning algorithms. The inner product q^<3>* k^<3> is responsible for answering how good is 'visite' answer to the question to what;s going on in Africa, etc.
 
-### Multi Headed Attention
+### Multi Head Attention
+For loop over the self attention architecture. Self attention calculated for each word is called 'head'.
+W1q, W1k, W1V are learned parameters that answers the question: 'What's happeneing there?'
+
+For multi head, we ask multiple questions, each responsible for answering the most likely word. And then they are stacked. In reality, these values of heads are calculated parallely because of no inter-dependence.
+
+![m1](https://github.com/sharvaree1921/Audio_Controlled_Drone/blob/main/Images/Screenshot%20from%202021-06-28%2007-56-00.png)
+
+### Transformers Network
 
