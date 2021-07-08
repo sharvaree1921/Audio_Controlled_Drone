@@ -2,7 +2,7 @@
 
 ### Transformers Network Intuition
 
-**Must See [this](https://towardsdatascience.com/illustrated-guide-to-transformers-step-by-step-explanation-f74876522bc0) video and article.
+**Must See [this](https://towardsdatascience.com/illustrated-guide-to-transformers-step-by-step-explanation-f74876522bc0) video and article.**
 
 One of the very very important architectures in the NLP model.
 Transformers Network allows you to compute all of these complicated complications in a parallel manner rather than sequentially from left to right as in RNN or LSTM.
